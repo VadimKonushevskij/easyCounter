@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: cadetblue;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.App > h2 {
+  font-size: 70px;
+}
+
+.App > h1 {
+  font-size: 300px;
+  margin-block: 3vw;
+}
+
+.App > div {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.App > div > button {
+  width: 200px;
+  height: 100px;
+  border-radius: 25px;
+  font-size: 70px;
+  border: 3px solid black;
+  transition: 0.2s;
+}
+.App > div > button:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.App > div > button:is(:first-child) {
+  background-color: brown;
+}
+.App > div > button:is(:last-child) {
+  background-color: greenyellow;
+}
